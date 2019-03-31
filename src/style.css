@@ -1,12 +1,15 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
     background-color: #6fa8dc;
   }
 
   h1 {
-    position: fixed;
-    margin-left: 530px;
-    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
   }
 
   h2 {
@@ -21,11 +24,11 @@ body {
     border-radius: 50%;
     background-color: white;
     border: 3px solid black;
-    position:fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
     margin-top: -12em;
-    margin-left: -12em;
+    margin-left: -11em;
   }
 
   .form-group {
@@ -36,9 +39,13 @@ body {
     width: 130px;
     padding: 10px;
     margin-top: 20px;
-    border: 1px solid black;
+    border: 3px solid black;
     background: white;
     display: inline-block;
+  }
+
+  input[type=password] {
+    margin-left: 5px;
   }
   
   input[type=text]:focus, input[type=password]:focus {
@@ -49,13 +56,15 @@ body {
   .login {
     background-color: #2b78e4;
     color: white;
-    padding: 12px 10px;
-    margin-left: 110px;
+    padding: 8px 10px;
+    margin-left: 120px;
     margin-top: 30px;
     border: none;
     cursor: pointer;
     width: 100px;
     font-weight: bold;
+    font-family: cursive;
+    font-size: 15px;
     opacity: 0.9;
   }
   
