@@ -8,7 +8,14 @@
 <body>
     <div class="app-wrap">
         <nav>
-            <aside class="navigation-drawer" data-booted="true" style="height: 100%; margin-top: 0px; transform: translateX(0px); width: 250px;">
+            <nav class="v-toolbar">
+                <div class="v-toolbar-content">
+                    <button type="button" class="v-toolbar-side-icon">
+                        <i aria-hidden="true" class="v-icon">menu</i>
+                    </button>
+                </div>
+            </nav>
+            <!-- <aside class="navigation-drawer">
                 <div class="v-list">
                     <li>
                         <a href="">Home</a>
@@ -20,24 +27,76 @@
                         <a href="">Settings</a>
                     </li>
                 </div>
-            </aside>
-            <nav class="v-toolbar" data-booted="true" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);"><div class="v-toolbar__content" style="height: 64px;">
-                <div class="v-toolbar-content">
-                    <button type="button" class="v-toolbar-side-icon">
-                        <i aria-hidden="true" class="v-icon">menu</i>
-                    </button>
-                </div>
-            </nav>
+            </aside> -->
         </nav>
-        <main class="v-content" data-booted="true" style="padding: 64px 0px 0px;">
+        <!-- <main class="v-content" data-booted="true">
             <div class="v-content-wrap">
-                <div class="container">
+                <div class="v-container">
                     <form novalidate="novalidate" class="v-form">
-                        
+                        <label>Select sector</label>
+                        <input list="sectors">
+                        <datalist id="sectors">
+                            <option value="Management">
+                            <option value="Development">
+                        </datalist>
+                        <label>Select skill</label>
+                        <input list="skills">
+                        <datalist id="skills">
+                            <option value="JavaScript">
+                            <option value="C#">
+                        </datalist>
+                        <label>Select status</label>
+                        <input list="status">
+                        <datalist id="status">
+                            <option value="Current employee">
+                            <option value="Not current employee">
+                        </datalist>
+                        <button type="button""><div class="v-btn__content">Filter</div></button>
                     </form>
                 </div>
             </div>
-        </main>
+            <div class="v-containter">
+                    <nav class="v-toolbar" data-booted="true" >
+                        <div class="v-toolbar__title">Employees
+                            <button type="button" class="v-btn v-btn--depressed theme--light">
+                                add employee
+                            </button>
+                        </div>
+                        <div class="v-table">
+                            <table class="v-datatable">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Sector</th>
+                                        <th>Skills</th>
+                                        <th>Salary</th>
+                                        <th>Arrival Date</th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="5" class="column"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="/employees/AngelTodorov.html">Angel Todorov</a></td>
+                                        <td>Management</td>
+                                        <td>JavaScript</td>
+                                        <td>3300</td>
+                                        <td>2019-02-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="/employees/GalyaMarinova.html">Galya Marinova</a></td>
+                                        <td>Development</td>
+                                        <td>C#</td>
+                                        <td>3500</td>
+                                        <td>2018-09-20</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </nav>
+            </div>
+        </main> -->
     </div>
 </body>
 </html>
