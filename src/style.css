@@ -1,73 +1,228 @@
 body {
-    font-family: cursive;
-    background-color: #6fa8dc;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #6fa8dc;
+}
 
-  h1 {
-    margin: auto;
-    text-align: center;
-    position: relative;
-    font-size: 60px;
-    font-style: italic;
-    font-weight: bold;
-  }
+h1 {
+  position: fixed;
+  margin-left: 530px;
+  font-size: 50px;
+}
 
-  h2 {
-      margin-top: 30px;
-      margin-left: 130px;
-      font-size: 20px;
-  }
-
-  .container {
-    width: 330px;
-    height: 330px;
-    border-radius: 50%;
-    background-color: white;
-    border: 3px solid black;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -12em;
-    margin-left: -11em;
-  }
-
-  .form-group {
-      margin-left: 60px;
-  }
-
-  input[type=text], input[type=password] {
-    width: 130px;
-    padding: 10px;
-    margin-top: 20px;
-    border: 3px solid black;
-    background: white;
-    display: inline-block;
-  }
-
-  input[type=password] {
-    margin-left: 5px;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  .login {
-    background-color: #2b78e4;
-    color: white;
-    padding: 8px 10px;
-    margin-left: 120px;
+h2 {
     margin-top: 30px;
-    border: none;
-    cursor: pointer;
-    width: 100px;
-    font-weight: bold;
-    font-family: cursive;
-    font-size: 15px;
-    opacity: 0.9;
+    margin-left: 130px;
+    font-size: 20px;
+}
+
+.container {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid black;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -12em;
+  margin-left: -12em;
+}
+
+.form-group {
+    margin-left: 60px;
+}
+
+input[type=text], input[type=password] {
+  width: 130px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid black;
+  background: white;
+  display: inline-block;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.login {
+  background-color: #2b78e4;
+  color: white;
+  padding: 12px 10px;
+  margin-left: 110px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.login:hover {
+  opacity: 1;
+}
+
+/* -- MAIN PAGE CONTENT STYLE -- */
+
+#sidebar-wrapper {
+  background-color: #36353e !important;
+  color: white;
+}
+
+#sidebar-wrapper a {
+  background-color: #36353e !important;
+  color: white;
+}
+
+.welcome {
+  margin-right: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+.main-main {
+  padding: 0 10%;
+  background: #f2f4f5;
+  height: 100%;
+}
+
+.list-dropdowns {
+  background: white;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.list-employees {
+  background: white;
+  padding: 20px;
+  margin: 0px;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+hr {
+  margin: 0;
+  background-color: black;
+  width: 1028px;
+}
+
+.title-emlpoyees {
+  background: white;
+  padding: 0px;
+  margin: 0px;
+  min-width: 1030px;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.title-emlpoyee {
+  margin-right: 670px;
+}
+
+.title-emlpoyees p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.same-width {
+  min-width: 250px;
+  margin: 0px 25px;
+}
+
+.sub-same-width {
+  min-width: 198px;
+}
+
+.btn-primary {
+  background-color: #6fa8dc;
+  border-color: #6fa8dc;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #5994ca;
+  border-color: #5994ca;
+} 
+
+.nav-background {
+  background: #6fa8dc !important;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
   }
-  
-  .login:hover {
-    opacity: 1;
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
   }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.sub-settings-container {
+
+}
+
+.list-skills {
+  background: white;
+  padding: 2px;
+  margin: 0px;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+fieldset { 
+  border: 1px solid;
+  border-color: #848484;
+  border-radius: 5px;
+  background: white;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+legend {
+  list-style-type: none;
+  display: inline-flex;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 670px;
+}

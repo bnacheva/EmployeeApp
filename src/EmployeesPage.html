@@ -1,43 +1,223 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <title>Employees</title>
+    <meta charset="utf-8">
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+        crossorigin="anonymous"
+    >
+    <link 
+        rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+        crossorigin="anonymous"
+    >
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="app-wrap">
-        <nav>
-            <aside class="navigation-drawer" data-booted="true" style="height: 100%; margin-top: 0px; transform: translateX(0px); width: 250px;">
-                <div class="v-list">
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="EmployeesPage.htm">Employees</a>
-                    </li>
-                    <li>
-                        <a href="">Settings</a>
-                    </li>
-                </div>
-            </aside>
-            <nav class="v-toolbar" data-booted="true" style="margin-top: 0px; padding-right: 0px; padding-left: 0px; transform: translateY(0px);"><div class="v-toolbar__content" style="height: 64px;">
-                <div class="v-toolbar-content">
-                    <button type="button" class="v-toolbar-side-icon">
-                        <i aria-hidden="true" class="v-icon">menu</i>
-                    </button>
+    <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Menu</div>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-light">Home</a>
+                <a href="EmployeesPage.html" class="list-group-item list-group-item-action bg-light">Employee</a>
+                <a href="Settings.html" class="list-group-item list-group-item-action bg-light">Settings</a>
+            </div>
+        </div>
+
+    <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom nav-background">
+                <button class="btn btn-primary" id="menu-toggle"> 
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <button class="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <span class="welcome">Welcome, User</span>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-        </nav>
-        <main class="v-content" data-booted="true" style="padding: 64px 0px 0px;">
-            <div class="v-content-wrap">
-                <div class="container">
-                    <form novalidate="novalidate" class="v-form">
-                        
-                    </form>
+
+            <div class="container-fluid main-main">
+                <ul class="list-dropdowns">
+                    <li>
+                        <div class="col-auto my-2 same-width">
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Select sector</option>
+                                <option value="1">Management</option>
+                                <option value="2">Development</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-auto my-2 same-width">
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Select skill</option>
+                                <option value="1">JavaScript</option>
+                                <option value="2">C#</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-auto my-2 same-width">
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Select status</option>
+                                <option value="1">Current employee</option>
+                                <option value="2">Not current employee</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="col-auto my-2">
+                            <button class="btn btn-primary" id="menu-toggle"> 
+                                Filter
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="sub-main">
+                    <ul class="title-emlpoyees">
+                        <li>
+                            <div class="col-auto my-2 sub-same-width title-emlpoyee">
+                                <p>Emlpoyees</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary" id="menu-toggle" style="margin-top: 10px;"> 
+                                Add Employee
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="list-employees">
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>Name</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>Sector</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>Skills</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>Salary</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>Arrival Date</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul class="list-employees">
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>Angel Todorov</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>Management</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>JavaScript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>3300</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>2019-02-02</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="list-employees">
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>Galya Marinova</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>Development</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>C#</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>3500</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-auto my-2 sub-same-width">
+                                <p>2018-09-20</p>
+                            </div>
+                        </li>    
+                    </ul>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
+
+  <script 
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Menu Toggle -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
 </body>
+
 </html>
