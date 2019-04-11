@@ -192,3 +192,38 @@ hr {
     margin-left: -15rem;
   }
 }
+
+.sub-settings-container {
+
+}
+
+.sub-settings-field {
+  background: white;
+  padding: 2px;
+  margin: 0px;
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+fieldset { 
+  border: 1px solid;
+  border-color: #848484;
+  border-radius: 5px;
+  background: white;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+legend {
+  list-style-type: none;
+  display: inline-flex;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 670px;
+}
