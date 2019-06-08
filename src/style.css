@@ -193,8 +193,9 @@ hr {
   }
 }
 
-.sub-settings-container {
-
+.sub-main a {
+  color: black;
+  text-decoration: none;
 }
 
 .sub-settings-field {
@@ -226,4 +227,55 @@ legend {
   font-size: 18px;
   font-weight: bold;
   margin-right: 670px;
+}
+
+
+/* -- Employee Profile -- */
+.profile {
+  padding-top: 15px;
+}
+
+.sub-profile {
+  background-color: white;
+}
+
+.profile-title {
+  margin: 10px;
+}
+
+.profile-title p {
+  font-size: 30px;
+}
+
+.profile-banner {
+  background-color: red;
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+
+.profile-banner p {
+  margin-left: 30%;
+  font: bold;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.profile-content {
+  list-style-type: none;
+}
+
+.profile-name p{
+  font-size: 25px;
+  font: bold;
+}
+
+.profile-sector p {
+  font-size: 25px;
+  font: bold;
+}
+
+.profile-buttons {
+  float: right;
+  width: 20%;
+  padding-left: 20px;
 }
