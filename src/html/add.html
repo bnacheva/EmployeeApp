@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="../style/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Menu</div>
+            <div class="list-group list-group-flush">
+                <a href="home.html" class="list-group-item list-group-item-action bg-light">Home</a>
+                <a href="employees.html" class="list-group-item list-group-item-action bg-light">Employee</a>
+                <a href="settings.html" class="list-group-item list-group-item-action bg-light">Settings</a>
+            </div>
+        </div>
+
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom nav-background">
+                <button class="btn btn-primary" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <span class="welcome">Welcome, User</span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid main-main">
+                <div class="sub-main">
+                    <div class="sub-profile">
+                        <ul class="title-emlpoyees">
+                            <div class="profile-title">
+                                <li>
+                                    <div class="col-auto my-2 sub-same-width title-emlpoyee">
+                                        <p>Add employee</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </ul>
+                        <hr />
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 col-form-label"><b>Name</b></label>
+                            <input id="name" type="text" placeholder="Name" name="name" class="form-control col-sm-10"
+                                style="width: 500px;">
+                        </div>
+                        <br/>
+                            <div class="form-group">
+                                <label for="name" class="col-sm-2 col-form-label"><b>Sector</b></label>
+                                <div style="width: 500px; margin-left: 140px; margin-top: -40px;">
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>Select sector</option>
+                                        <option value="1">Management</option>
+                                        <option value="2">Development</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <label for="name" class="col-sm-2 col-form-label"><b>Skill</b></label>
+                                <div style="width: 500px; margin-left: 140px; margin-top: -40px;">
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>Select skill</option>
+                                        <option value="1">JavaScript</option>
+                                        <option value="2">C#</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="form-group">
+                                <label for="name" class="col-sm-2 col-form-label"><b>Status</b></label>
+                                <div style="width: 500px; margin-left: 140px; margin-top: -40px;">
+                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                        <option selected>Select status</option>
+                                        <option value="1">Current employee</option>
+                                        <option value="2">Not current employee</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="salary" class="col-sm-2 col-form-label"><b>Salary</b></label>
+                                <input id="name" type="number" min="0" placeholder="Salary" name="salary" class="form-control col-sm-10"
+                                        style="width: 500px;">
+                            </div>
+                            <div class="form-group">
+                                    <label for="date" class="col-sm-2 col-form-label"><b>Arrival date</b></label>
+                                    <input id="date" type="date" min="0" placeholder="Arrival date" name="date" class="form-control col-sm-10"
+                                            style="width: 500px;">
+                            </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                    </div>
+                    <div class="col-md-1">
+                        <button class="btn btn-primary" id="menu-toggle" style="margin-left: 130px;">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <!-- Menu Toggle -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
