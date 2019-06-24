@@ -60,63 +60,86 @@
                         </ul>
                         <hr />
                         <div class="form-group">
-                            <label for="name" class="col-sm-2 col-form-label"><b>Name</b></label>
-                            <input id="name" type="text" placeholder="Name" name="name" class="form-control col-sm-10"
-                                style="width: 500px;">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="name" class="col-form-label"><b>Name</b></label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input id="name" type="text" placeholder="Name" name="name">
+                                </div>
+                            </div>
                         </div>
                         <br/>
                             <div class="form-group">
-                                <label for="name" class="col-sm-2 col-form-label"><b>Sector</b></label>
-                                <div style="width: 500px; margin-left: 180px; margin-top: -40px;">
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                        <option selected>Select sector</option>
-                                        <option value="1">Management</option>
-                                        <option value="2">Development</option>
-                                    </select>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="name" class="col-form-label"><b>Sector</b></label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                            <option selected>Select sector</option>
+                                            <option value="1">Management</option>
+                                            <option value="2">Development</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <br/>
                             <div class="form-group">
-                                <label for="name" class="col-sm-2 col-form-label"><b>Skill</b></label>
-                                <div style="width: 500px; margin-left: 180px; margin-top: -40px;">
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                        <option selected>Select skill</option>
-                                        <option value="1">JavaScript</option>
-                                        <option value="2">C#</option>
-                                    </select>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="name" class="col-form-label"><b>Skill</b></label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                            <option selected>Select skill</option>
+                                            <option value="1">JavaScript</option>
+                                            <option value="2">C#</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <br/>
                             <div class="form-group">
-                                <label for="name" class="col-sm-2 col-form-label"><b>Status</b></label>
-                                <div style="width: 500px; margin-left: 180px; margin-top: -40px;">
-                                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                        <option selected>Select status</option>
-                                        <option value="1">Current employee</option>
-                                        <option value="2">Not current employee</option>
-                                    </select>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="name" class="col-form-label"><b>Status</b></label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                            <option selected>Select status</option>
+                                            <option value="1">Current employee</option>
+                                            <option value="2">Not current employee</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="salary" class="col-sm-2 col-form-label"><b>Salary</b></label>
-                                <input id="salary" type="number" min="0" placeholder="Salary" name="salary" class="form-control col-sm-10"
-                                        style="width: 500px;">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="salary" class="col-form-label"><b>Salary</b></label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="salary" type="number" min="0" placeholder="Salary" name="salary">
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                    <label for="date" class="col-sm-2 col-form-label"><b>Arrival date</b></label>
-                                    <input id="date" type="date" min="0" placeholder="Arrival date" name="date" class="form-control col-sm-10"
-                                            style="width: 500px;">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="date" class="col-form-label"><b>Arrival date</b></label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="date" type="date" min="0" placeholder="Arrival date" name="date">
+                                    </div>
+                                </div>
                             </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-9">
-                    </div>
-                    <div class="col-md-1">
-                        <button class="btn btn-primary" id="menu-toggle" style="margin-left: 130px; margin-top: -20px;">
+                <div class="home-button">
+                    <button class="btn btn-primary" id="menu-toggle" onclick="location.href='edit.html'">
                             Save
-                        </button>
-                    </div>
+                    </button>
                 </div>
             </div>
             </form>
