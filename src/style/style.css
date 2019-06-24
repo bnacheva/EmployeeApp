@@ -33,6 +33,22 @@ h2 {
     margin-left: 60px;
 }
 
+.form-group .row {
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.form-group input[type=text], 
+.form-group input[type=number], 
+.form-group input[type=date] {
+  width: 100%;
+}
+
+#login-form input[type=text],
+#login-form input[type=password] {
+  width: 50%;
+}
+
 input[type=text], input[type=password], input[type=number], input[type=date] {
   width: 130px;
   padding: 10px;
@@ -82,7 +98,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
 }
 
 .main-main {
-  padding: 0 10%;
+  padding: 20px 10%;
   background: #f2f4f5;
   height: 100%;
 }
@@ -93,7 +109,8 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
   margin-top: 50px;
   margin-bottom: 50px;
   list-style-type: none;
-  display: inline-flex;
+  justify-content: space-between;
+  display: flex;
 }
 
 .list-employees {
@@ -101,27 +118,28 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
   padding: 20px;
   margin: 0px;
   list-style-type: none;
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
 }
 
-hr {
+/* hr {
   margin: 0;
   background-color: black;
   width: 1028px;
-}
+} */
 
 .title-emlpoyees {
   background: white;
-  padding: 0px;
-  margin: 0px;
-  min-width: 1030px;
+  margin: auto;
   list-style-type: none;
-  display: inline-flex;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.title-emlpoyee {
+/* .title-emlpoyee {
   margin-right: 670px;
-}
+} */
 
 .title-emlpoyees p {
   font-size: 18px;
@@ -129,16 +147,15 @@ hr {
 }
 
 .same-width {
-  min-width: 250px;
-  margin: 0px 25px;
+  min-width: 220px;
 }
 
-.sub-same-width {
+/* .sub-same-width {
   min-width: 198px;
-}
+} */
 
 .btn-primary {
-  background-color: #6fa8dc;
+  background-color: #4b8cc7;
   border-color: #6fa8dc;
 }
 
@@ -203,6 +220,10 @@ hr {
   #wrapper.toggled #page-content-wrapper {
     margin-left: 15rem !important;
   }
+}
+
+#first-of-type {
+  margin-bottom: 3px;
 }
 
 .sub-main a {
@@ -298,4 +319,12 @@ legend {
 
 #more {
   display: none;
+}
+
+.home-button {
+  height: 40px;
+}
+
+.home-button button {
+  float: right;
 }
