@@ -44,6 +44,11 @@ h2 {
   width: 100%;
 }
 
+#login-form input[type=text],
+#login-form input[type=password] {
+  width: 50%;
+}
+
 input[type=text], input[type=password], input[type=number], input[type=date] {
   width: 130px;
   padding: 10px;
