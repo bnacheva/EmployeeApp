@@ -74,17 +74,6 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
 }
 
 /* -- MAIN PAGE CONTENT STYLE -- */
-
-#sidebar-wrapper {
-  background-color: #36353e !important;
-  color: white;
-}
-
-#sidebar-wrapper a {
-  background-color: #36353e !important;
-  color: white;
-}
-
 .welcome {
   margin-right: 50px;
   color: white;
@@ -162,7 +151,14 @@ hr {
   background: #6fa8dc !important;
 }
 
+#sidebar-wrapper a {
+  background-color: #326596 !important;
+  color: white;
+}
+
 #sidebar-wrapper {
+  background-color: #326596 !important;
+  color: white;
   min-height: 100vh;
   margin-left: -15rem;
   -webkit-transition: margin .25s ease-out;
@@ -182,15 +178,15 @@ hr {
 
 #page-content-wrapper {
   min-width: 100vw;
-}
-
-#wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
 
 @media (min-width: 768px) {
   #sidebar-wrapper {
-    margin-left: 0;
+    margin-left: -15rem;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
   }
 
   #page-content-wrapper {
@@ -199,7 +195,12 @@ hr {
   }
 
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem;
+    margin-left: 0 !important;
+    opacity: 1;
+  }
+  
+  #wrapper.toggled #page-content-wrapper {
+    margin-left: 15rem !important;
   }
 }
 
