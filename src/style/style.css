@@ -5,7 +5,8 @@ body {
 
 h1 {
   position: fixed;
-  margin-left: 530px;
+  margin-top: -70px;
+  margin-left: 40px;
   font-size: 50px;
 }
 
@@ -61,6 +62,15 @@ input[type=text]:focus, input[type=password]:focus {
 
 .login:hover {
   opacity: 1;
+}
+
+.notification_error {
+  border: 1px solid #A25965;
+  height: auto;
+  width: 100%;
+  padding: 4px;
+  background: #F8F0F1;
+  text-align: center;
 }
 
 /* -- MAIN PAGE CONTENT STYLE -- */

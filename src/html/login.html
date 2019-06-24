@@ -4,12 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <title>Welcome</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="../style/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="../scripts/validation.js"></script>
 </head>
 <body>
-    <h1>Welcome!</h1>
     <div class="container">
-        <form class="col-12" action="Home.html">
+        <h1>Welcome!</h1>
+        <form id="login-form" class="col-12" action="home.html">
             <h2>Sign in</h2>
             <div class="form-group">
                 <label for="username" class="col-sm-2 col-form-label"><b>Username</b></label>
